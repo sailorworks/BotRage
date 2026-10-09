@@ -5,8 +5,6 @@ import { useBotChain } from "@/providers/BotChainProvider";
 import { ArrowRight, Cpu, Layers, Zap, ExternalLink, ShieldCheck, Activity, Terminal, CheckCircle2, ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useState, useMemo } from "react";
-import { BOT_CHAIN } from "@/lib/constants";
-
 export default function LandingPage() {
   const { connect, isConnecting, isConnected, isCorrectChain, switchToBotChain, address } = useBotChain();
   const router = useRouter();
